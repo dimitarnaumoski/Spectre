@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/spectre.css/dist/spectre.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css"
+    />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <link rel="stylesheet" href="css/main.css" />
+
+    <title>Fictravel</title>
+  </head>
+  <body id="pocetnanav">
+    <header class="navbar bg-success">
+      <section class="navbar-section">
+        <img src="img/Fiktravel.png" alt="" id="logo" />
+      </section>
+      <section class="navbar-section" id="navbar-items">
+        <div class="input-group input-inline">
+          <a href="#pocetna" class="btn btn-link text-secondary hide-md">Почетна</a>
+          <a href="#popdestinacii" class="btn btn-link text-secondary hide-md">Популарни дестинации</a>
+          <a href="#destinacii" class="btn btn-link text-secondary hide-md">Дестинации</a>
+          <a href="#kontakt" class="btn btn-link text-secondary hide-md">Контакт</a>
+        </div>
+      </section>
+    </header>
+
+    <!-- Секција: Слајдер -->
+    <section class="section section-slider">
+        <div class="carousel" id="slider">
+        <!-- carousel locator -->
+        <input class="carousel-locator" id="slide-1" type="radio" name="carousel-radio" hidden="" checked="">
+        <input class="carousel-locator" id="slide-2" type="radio" name="carousel-radio" hidden="">
+        <input class="carousel-locator" id="slide-3" type="radio" name="carousel-radio" hidden="">
+      
+        
+        <!-- carousel container -->
+        <div class="carousel-container">
+          <!-- carousel item -->
+          <figure class="carousel-item">
+            <label class="item-prev btn btn-action btn-lg" for="slide-4"><i class="icon icon-arrow-left"></i></label>
+            <label class="item-next btn btn-action btn-lg" for="slide-2"><i class="icon icon-arrow-right"></i></label>
+            <img class="img-responsive rounded" src="img/slide1.jpg" alt="macOS Yosemite Wallpaper">
+          </figure>
+          <figure class="carousel-item">
+            <label class="item-prev btn btn-action btn-lg" for="slide-1"><i class="icon icon-arrow-left"></i></label>
+            <label class="item-next btn btn-action btn-lg" for="slide-3"><i class="icon icon-arrow-right"></i></label>
+            <img class="img-responsive rounded" src="img/slide2.jpg" alt="macOS Yosemite Wallpaper">
+          </figure>
+          <figure class="carousel-item">
+            <label class="item-prev btn btn-action btn-lg" for="slide-2"><i class="icon icon-arrow-left"></i></label>
+            <label class="item-next btn btn-action btn-lg" for="slide-4"><i class="icon icon-arrow-right"></i></label>
+            <img class="img-responsive rounded" src="img/slide3.jpg" alt="macOS El Capitan Wallpaper">
+          </figure>
+        
+        </div>
+        <!-- carousel navigation -->
+        <div class="carousel-nav">
+          <label class="nav-item text-hide c-hand" for="slide-1">1</label>
+          <label class="nav-item text-hide c-hand" for="slide-2">2</label>
+          <label class="nav-item text-hide c-hand" for="slide-3">3</label>
+      </div>
+  </section>
+
+  <!-- Секција: Популарни дестинации -->
+  <section id="popdestinacii" class="section section-popular">
+      <div class="container">
+         <h4 class="text-center">
+            Популарни <span class="text-success">Дестинации</span>
+          </h4>
+        <div class="columns">
+          <div class="column col-sm-12 col-md-4">
+            <div class="card">
+              <div class="card-image">
+                <img src="img/barselona.jpg" class="img-responsive">
+              </div>
+              <div class="card-header">
+                <div class="card-title h5">Барселона, Шпанија</div>
+              </div>
+              <div class="card-body">
+                Прекрасната и живописна Барселона е втор по големина град во
+                  Шпанија и во метрополската област на градот живеат помалку од
+                  5 милиони жители. Таа е главен град на Автономната заедница
+                  Каталонија и седиште на главните управни органи на таа област.
+                  Сместена е на брегот на Медитеранот и за нејзиното настанување
+                  има неколку легенди – дека е изградена од митскиот јунак
+                  Херкул или, повеќе прифатената, дека е населба изградена од
+                  картагинскиот водач Ханибал во третиот век пред нашата ера
+              </div>
+              <div class="card-footer text-center">
+                 <h5>
+                  Цени од
+                  <span class="text-success" style="font-size: 45px"
+                    >139&euro;</span
+                  >
+                </h5>
+                <button class="btn btn-lg btn-success">Резервирај <i class="far fa-lg fa-calendar-alt"></i></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="column col-sm-12 col-md-4">
+            <div class="card">
+                <div class="card-image">
+                  <img src="img/istanbul.jpg" class="img-responsive">
+                </div>
+                <div class="card-header">
+                  <div class="card-title h5">Истанбул, Турција</div>
+                </div>
+                <div class="card-body">
+                   Главниот град на 3 империи ќе ве освои бидејќи е многу повеке
+                  од само име од историјата. Ова е еднинствениот град кој
+                  поврзува 2 континенти, град на спротивности и на извонредни
+                  традиционални вредности. Многумина го нарекуваат „Главниот
+                  град на светот“, други пак „Мостот помеѓу Европа и Азија“.
+                  Сепак, Истанбул е најголемиот град во Турција и еден од
+                  најголемите градови во светот, со население од над 13 милиони
+                  жители
+                </div>
+                  <div class="card-footer text-center">
+                 <h5>
+                  Цени од
+                  <span class="text-success" style="font-size: 45px"
+                    >89&euro;</span
+                  >
+                </h5>
+                  <button class="btn btn-lg btn-success">Резервирај <i class="far fa-lg fa-calendar-alt"></i></button>
+              </div>
+              </div>
+          </div>
+
+          <div class="column col-sm-12 col-md-4">
+           <div class="card">
+              <div class="card-image">
+                <img src="img/pariz.jpg" class="img-responsive">
+              </div>
+              <div class="card-header">
+                <div class="card-title h5">Париз, Франција</div>
+              </div>
+              <div class="card-body">
+                Градот на светлината со право го носи овој епитет. Со својата
+                  единствена архитектура, големите плоштади и старите
+                  знаменитости претставува еден од најкомплетните градови на
+                  Светот. На овој град може да му се дадат и повеќе епитети:
+                  градот на љубовта, градот на страста, виното, печивата,
+                  уметност, градот на модата, француските револуции, богат со
+                  историја и култура
+              </div>
+               <div class="card-footer text-center">
+                 <h5>
+                  Цени од
+                  <span class="text-success" style="font-size: 45px"
+                    >192&euro;</span
+                  >
+                </h5>
+                 <button class="btn btn-lg btn-success">Резервирај <i class="far fa-lg fa-calendar-alt"></i></button>
+              </div>
+            </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Секција: Зошто -->
+    <section class="section section-icons bg-gray text-center">
+      <div class="container">
+        <h4>Зошто да патувате со нас?</h4>
+        <div class="columns">
+          <div class="column col-sm-12 col-md-4">
+           <div class="card">
+             <div class="card-body">
+                <i class="fas fa-5x fa-users text-success"></i>
+              </div>
+              <div class="card-header">
+                <div class="card-title h5">Професионална услуга</div>
+                <div class="card-body">Со нашето искуство и кадровската професионалност, континуирано ја потврдуваме востановената синтагма, за "Комплетен туристички сервис".</div>
+              </div>
+            </div>
+          </div>
+           <div class="column col-sm-12 col-md-4">
+           <div class="card">
+             <div class="card-body">
+                <i class="fas fa-5x fa-phone text-success"></i>
+              </div>
+              <div class="card-header">
+                <div class="card-title h5">Поволни цени</div>
+                <div class="card-body">Прифатливите цени, во реална корелација со понудените услуги и аранжмани, најдобро ги дефинира огромниот број на постојани корисници.</div>
+              </div>
+            </div>
+          </div>
+           <div class="column col-sm-12 col-md-4">
+           <div class="card">
+              <div class="card-body">
+                <i class="fas fa-5x fa-plane text-success"></i>
+              </div>
+              <div class="card-header">
+                <div class="card-title h5">Професионална поддршка</div>
+                <div class="card-body">Одговорноста и грижата за своите клиенти, секојдневно ја докажуваме со постојаната поддршка и достапност на нашите вработени.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Секција: Дестинации -->
+    <section id="destinacii" class="section section-destinations text-center">
+      <div class="container">
+         <h4 class="text-success">Дестинации</h4>
+        <!-- РЕД 1 -->
+        <div class="columns">
+          <div class="column col-sm-12 col-md-4">
+            <div class="card">
+              <div class="card-image">
+                <img src="img/Rim.jpg" class="img-responsive">
+              </div>
+              <div class="card-header">
+                <div class="card-title h5">Рим, Италија</div>
+              </div>
+              <div class="card-body">
+                <h5>
+                  Цени од
+                  <span class="teal-text" style="font-size: 45px"
+                    >129&euro;</span
+                  >
+                </h5>
+              </div>
+              <div class="card-footer">
+                <button class="btn btn-lg btn-success">Резервирај <i class="far fa-lg fa-calendar-alt"></i></button>
+              </div>
+            </div>
+          </div>
+          <div class="column col-sm-12 col-md-4">
+            <div class="card">
+              <div class="card-image">
+                <img src="img/bukurest.jpg" class="img-responsive">
+              </div>
+              <div class="card-header">
+                <div class="card-title h5">Букурешт, Романија</div>
+              </div>
+              <div class="card-body">
+                <h5>
+                  Цени од
+                  <span class="teal-text" style="font-size: 45px"
+                    >109&euro;</span
+                  >
+                </h5>
+              </div>
+              <div class="card-footer">
+                <button class="btn btn-lg btn-success">Резервирај <i class="far fa-lg fa-calendar-alt"></i></button>
+              </div>
+            </div>
+          </div>
+          <div class="column col-sm-12 col-md-4">
+            <div class="card">
+              <div class="card-image">
+                <img src="img/Moskva.jpg" class="img-responsive">
+              </div>
+              <div class="card-header">
+                <div class="card-title h5">Москва, Русија</div>
+              </div>
+              <div class="card-body">
+                <h5>
+                  Цени од
+                  <span class="teal-text" style="font-size: 45px"
+                    >999&euro;</span
+                  >
+                </h5>
+              </div>
+              <div class="card-footer">
+                <button class="btn btn-lg btn-success">Резервирај <i class="far fa-lg fa-calendar-alt"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- РЕД 2 -->
+        <div class="columns">
+          <div class="column col-sm-12 col-md-4">
+            <div class="card">
+              <div class="card-image">
+                <img src="img/milano.jpg" class="img-responsive">
+              </div>
+              <div class="card-header">
+                <div class="card-title h5">Милано, Италија</div>
+              </div>
+              <div class="card-body">
+                <h5>
+                  Цени од
+                  <span class="teal-text" style="font-size: 45px"
+                    >199&euro;</span
+                  >
+                </h5>
+              </div>
+              <div class="card-footer">
+                <button class="btn btn-lg btn-success">Резервирај <i class="far fa-lg fa-calendar-alt"></i></button>
+              </div>
+            </div>
+          </div>
+          <div class="column col-sm-12 col-md-4">
+            <div class="card">
+              <div class="card-image">
+                <img src="img/amsterdam.jpg" class="img-responsive">
+              </div>
+              <div class="card-header">
+                <div class="card-title h5">Амстердам, Холандија</div>
+              </div>
+              <div class="card-body">
+                <h5>
+                  Цени од
+                  <span class="teal-text" style="font-size: 45px"
+                    >156&euro;</span
+                  >
+                </h5>
+              </div>
+              <div class="card-footer">
+                <button class="btn btn-lg btn-success">Резервирај <i class="far fa-lg fa-calendar-alt"></i></button>
+              </div>
+            </div>
+          </div>
+          <div class="column col-sm-12 col-md-4">
+            <div class="card">
+              <div class="card-image">
+                <img src="img/venecija.jpg" class="img-responsive">
+              </div>
+              <div class="card-header">
+                <div class="card-title h5">Венеција, Италија</div>
+              </div>
+              <div class="card-body">
+                <h5>
+                  Цени од
+                  <span class="teal-text" style="font-size: 45px"
+                    >156&euro;</span
+                  >
+                </h5>
+              </div>
+              <div class="card-footer">
+                <button class="btn btn-lg btn-success">Резервирај <i class="far fa-lg fa-calendar-alt"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- РЕД 3 -->
+        <div class="columns">
+          <div class="column col-sm-12 col-md-4">
+            <div class="card">
+              <div class="card-image">
+                <img src="img/berlin.jpg" class="img-responsive">
+              </div>
+              <div class="card-header">
+                <div class="card-title h5">Берлин, Германија</div>
+              </div>
+              <div class="card-body">
+                <h5>
+                  Цени од
+                  <span class="teal-text" style="font-size: 45px"
+                    >134&euro;</span
+                  >
+                </h5>
+              </div>
+              <div class="card-footer">
+                <button class="btn btn-lg btn-success">Резервирај <i class="far fa-lg fa-calendar-alt"></i></button>
+              </div>
+            </div>
+          </div>
+          <div class="column col-sm-12 col-md-4">
+            <div class="card">
+              <div class="card-image">
+                <img src="img/budva.jpg" class="img-responsive">
+              </div>
+              <div class="card-header">
+                <div class="card-title h5">Будва, Црна Гора</div>
+              </div>
+              <div class="card-body">
+                <h5>
+                  Цени од
+                  <span class="teal-text" style="font-size: 45px"
+                    >79&euro;</span
+                  >
+                </h5>
+              </div>
+              <div class="card-footer">
+                <button class="btn btn-lg btn-success">Резервирај <i class="far fa-lg fa-calendar-alt"></i></button>
+              </div>
+            </div>
+          </div>
+          <div class="column col-sm-12 col-md-4">
+            <div class="card">
+              <div class="card-image">
+                <img src="img/budimpesta.jpg" class="img-responsive">
+              </div>
+              <div class="card-header">
+                <div class="card-title h5">Будимпешта, Унгарија</div>
+              </div>
+              <div class="card-body">
+                <h5>
+                  Цени од
+                  <span class="teal-text" style="font-size: 45px"
+                    >89&euro;</span
+                  >
+                </h5>
+              </div>
+              <div class="card-footer">
+                <button class="btn btn-lg btn-success">Резервирај <i class="far fa-lg fa-calendar-alt"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Секција: Следење  -->
+    <section class="section section-follow bg-success text-center">
+      <div class="container">
+        <div class="columns">
+          <div class="column col-sm-12">
+            <h4>Следете го Фиктравел</h4>
+            <p>Следете не на социјалните мрежи за посебни понуди</p>
+            <p>
+              <a href="#" class="white-text">
+                <i class="fab fa-facebook fa-4x text-secondary"></i>
+              </a>
+              <a href="#" class="white-text">
+                <i class="fab fa-twitter fa-4x text-secondary"></i>
+              </a>
+              <a href="#" class="white-text">
+                <i class="fab fa-linkedin fa-4x text-secondary"></i>
+              </a>
+              <a href="#" class="white-text">
+                <i class="fab fa-google-plus fa-4x text-secondary"></i>
+              </a>
+              <a href="#" class="white-text">
+                <i class="fab fa-pinterest fa-4x text-secondary"></i>
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Секција: Контакт -->
+    <section id="kontakt" class="section section-contact">
+      <div class="container">
+        <div class="columns">
+
+          <div class="column col-sm-12 col-md-6">
+            <div class="card bg-success text-center">
+               <i class="far fa-3x fa-envelope"></i> 
+  
+              <div class="card-header">
+                <div class="card-title h5">Контакт</div>
+              </div>
+              <div class="card-body">
+              Пополнете ги полињата за да ни испратите мејл, а ние во најбрзо време ќе ви одговориме, исто така може да ни испратите порака на социјалните мрежи, или да ни се јавите на телефонскиот број 070-001-002
+              </div>
+            </div>
+
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Локација</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Агенција Фиктравел</td>
+                </tr>
+                <tr>
+                  <td>Битола, Македонија</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="column col-sm-12 col-md-6">
+
+            <div class="card bg-gray contact-section">
+              <h5 class="text-center">Ве замолуваме да ги пополните полињата</h5>
+              <div class="form-group">
+                <input class="form-input" type="text" placeholder="Име">
+                <label class="form-label" ></label>
+                <input class="form-input" type="text" placeholder="Мејл">
+                <label class="form-label" ></label>
+                <input class="form-input" type="text" placeholder="Телефон">
+                <label class="form-label" ></label>
+                <textarea class="form-input" placeholder="Внесете порака" rows="3"></textarea>
+                 <label class="form-label" ></label>
+                <input type="submit" value="Испрати" class="btn btn-success" />
+                 <label class="form-label" ></label>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="section bg-success text-center">
+      <h4>Фиктравел &copy; 2021</h4>
+    </footer>
+
+  </body>
+</html>

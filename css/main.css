@@ -1,0 +1,54 @@
+#logo {
+  padding: 10px 0 10px 300px;
+}
+
+#navbar-items {
+  padding-right: 300px;
+}
+
+#slider {
+  height: 450px;
+}
+
+.section-popular {
+  padding-top: 50px;
+}
+
+.section-icons {
+  padding-top: 50px;
+}
+
+.section-destinations {
+  padding-top: 50px;
+}
+
+.section-follow {
+  padding-top: 50px;
+}
+
+.section-follow .fa-4x {
+  margin: 5px 10px;
+}
+
+.section-galerija {
+  padding: 50px 50px 0 50px;
+}
+
+.section-contact {
+  padding-top: 50px;
+}
+
+footer {
+  margin-top: 10vh;
+  padding-top: 50px;
+  padding-bottom: 35px;
+}
+
+@media only screen and (max-width: 840px) {
+  #logo {
+    padding: 10px 0 10px 20px;
+  }
+  #slider {
+    height: 170px;
+  }
+}
