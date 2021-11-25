@@ -10,12 +10,17 @@
   height: 450px;
 }
 
+.section-slider img {
+  opacity: 0.7;
+}
+
 .section-popular {
   padding-top: 50px;
 }
 
 .section-icons {
   padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .section-destinations {
@@ -27,15 +32,26 @@
 }
 
 .section-follow .fa-4x {
-  margin: 5px 10px;
+  margin: 10px 10px;
 }
 
-.section-galerija {
-  padding: 50px 50px 0 50px;
+.section-follow .fa-4x:hover {
+  color: #3a3a3c;
+  transition: ease-in;
+  transition-duration: 0.3s;
 }
 
 .section-contact {
   padding-top: 50px;
+}
+
+.section-iskustva {
+  margin-top: 100px;
+}
+
+.section-about {
+  margin: 100px;
+  font-size: x-large;
 }
 
 footer {
@@ -50,5 +66,16 @@ footer {
   }
   #slider {
     height: 170px;
+  }
+  #istanbul {
+    margin-top: 100px;
+  }
+  #pariz {
+    margin-top: 100px;
+  }
+
+  .section-zanas {
+    margin: 30px;
+    font-size: medium;
   }
 }

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-wi`dth, initial-scale=1.0" />
     
     <link
       rel="stylesheet"
@@ -27,18 +27,20 @@
   <body id="pocetnanav">
     <header class="navbar bg-success">
       <section class="navbar-section">
-        <img src="img/Fiktravel.png" alt="" id="logo" />
+        <img src="img/Fiktravel.png" alt="" id="logo"/>
       </section>
       <section class="navbar-section" id="navbar-items">
         <div class="input-group input-inline">
-          <a href="#pocetna" class="btn btn-link text-secondary hide-md">Почетна</a>
           <a href="#popdestinacii" class="btn btn-link text-secondary hide-md">Популарни дестинации</a>
           <a href="#destinacii" class="btn btn-link text-secondary hide-md">Дестинации</a>
-          <a href="#kontakt" class="btn btn-link text-secondary hide-md">Контакт</a>
+          <a href="#iskustva" class="btn btn-link text-secondary hide-md">Искуства</a>
+          <a href="kontakt.html" class="btn btn-link text-secondary">Контакт</a>
+          <a href="about.html" class="btn btn-link text-secondary">За нас</a>
         </div>
       </section>
     </header>
-
+      
+    
     <!-- Секција: Слајдер -->
     <section class="section section-slider">
         <div class="carousel" id="slider">
@@ -54,17 +56,17 @@
           <figure class="carousel-item">
             <label class="item-prev btn btn-action btn-lg" for="slide-4"><i class="icon icon-arrow-left"></i></label>
             <label class="item-next btn btn-action btn-lg" for="slide-2"><i class="icon icon-arrow-right"></i></label>
-            <img class="img-responsive rounded" src="img/slide1.jpg" alt="macOS Yosemite Wallpaper">
+            <img class="img-responsive rounded" src="img/slide1.jpg" alt="Slide1">
           </figure>
           <figure class="carousel-item">
             <label class="item-prev btn btn-action btn-lg" for="slide-1"><i class="icon icon-arrow-left"></i></label>
             <label class="item-next btn btn-action btn-lg" for="slide-3"><i class="icon icon-arrow-right"></i></label>
-            <img class="img-responsive rounded" src="img/slide2.jpg" alt="macOS Yosemite Wallpaper">
+            <img class="img-responsive rounded" src="img/slide2.jpg" alt="Slide2">
           </figure>
           <figure class="carousel-item">
             <label class="item-prev btn btn-action btn-lg" for="slide-2"><i class="icon icon-arrow-left"></i></label>
             <label class="item-next btn btn-action btn-lg" for="slide-4"><i class="icon icon-arrow-right"></i></label>
-            <img class="img-responsive rounded" src="img/slide3.jpg" alt="macOS El Capitan Wallpaper">
+            <img class="img-responsive rounded" src="img/slide3.jpg" alt="Slide3">
           </figure>
         
         </div>
@@ -75,16 +77,17 @@
           <label class="nav-item text-hide c-hand" for="slide-3">3</label>
       </div>
   </section>
+ 
 
   <!-- Секција: Популарни дестинации -->
   <section id="popdestinacii" class="section section-popular">
       <div class="container">
-         <h4 class="text-center">
+         <h2 class="text-center">
             Популарни <span class="text-success">Дестинации</span>
-          </h4>
+          </h2>
         <div class="columns">
-          <div class="column col-sm-12 col-md-4">
-            <div class="card">
+          <div class="column col-sm-12 col-md-12 col-lg-4">
+            <div class="card" style="height: 800px">
               <div class="card-image">
                 <img src="img/barselona.jpg" class="img-responsive">
               </div>
@@ -104,17 +107,15 @@
               <div class="card-footer text-center">
                  <h5>
                   Цени од
-                  <span class="text-success" style="font-size: 45px"
-                    >139&euro;</span
-                  >
+                  <span class="text-success" style="font-size: 45px">139&euro;</span>
                 </h5>
-                <button class="btn btn-lg btn-success">Резервирај <i class="far fa-lg fa-calendar-alt"></i></button>
+                <button class="btn btn-lg btn-success" onclick="modalOpen()">Резервирај <i class="far fa-lg fa-calendar-alt"></i></button>
               </div>
             </div>
           </div>
 
-          <div class="column col-sm-12 col-md-4">
-            <div class="card">
+          <div class="column col-sm-12 col-md-12 col-lg-4">
+            <div class="card" style="height: 800px;" id="istanbul">
                 <div class="card-image">
                   <img src="img/istanbul.jpg" class="img-responsive">
                 </div>
@@ -134,17 +135,15 @@
                   <div class="card-footer text-center">
                  <h5>
                   Цени од
-                  <span class="text-success" style="font-size: 45px"
-                    >89&euro;</span
-                  >
+                  <span class="text-success" style="font-size: 45px">89&euro;</span>
                 </h5>
-                  <button class="btn btn-lg btn-success">Резервирај <i class="far fa-lg fa-calendar-alt"></i></button>
+                  <button class="btn btn-lg btn-success" onclick="modalOpen()">Резервирај <i class="far fa-lg fa-calendar-alt"></i></button>
               </div>
               </div>
           </div>
 
-          <div class="column col-sm-12 col-md-4">
-           <div class="card">
+          <div class="column col-sm-12 col-md-12 col-lg-4">
+           <div class="card" style="height: 800px" id="pariz">
               <div class="card-image">
                 <img src="img/pariz.jpg" class="img-responsive">
               </div>
@@ -164,10 +163,9 @@
                  <h5>
                   Цени од
                   <span class="text-success" style="font-size: 45px"
-                    >192&euro;</span
-                  >
+                    >192&euro;</span>
                 </h5>
-                 <button class="btn btn-lg btn-success">Резервирај <i class="far fa-lg fa-calendar-alt"></i></button>
+                 <button class="btn btn-lg btn-success" onclick="modalOpen()">Резервирај <i class="far fa-lg fa-calendar-alt"></i></button>
               </div>
             </div>
             </div>
@@ -177,13 +175,26 @@
       </div>
     </section>
 
+    <!-- Parallax -->
+    <div class="parallax">
+      <div class="parallax-top-left" tabindex="1"></div>
+      <div class="parallax-top-right" tabindex="2"></div>
+      <div class="parallax-bottom-left" tabindex="3"></div>
+      <div class="parallax-bottom-right" tabindex="4"></div>
+      <div class="parallax-content">
+        <div class="parallax-back">
+          <img src="img/parallax1.jpg" class="img-responsive rounded" style="width: 1900px; height: 500px;">
+        </div>
+      </div>
+    </div>
+
     <!-- Секција: Зошто -->
     <section class="section section-icons bg-gray text-center">
       <div class="container">
-        <h4>Зошто да патувате со нас?</h4>
+        <h2>Зошто да патувате со нас?</h2>
         <div class="columns">
-          <div class="column col-sm-12 col-md-4">
-           <div class="card">
+          <div class="column col-sm-12 col-md-12 col-lg-4">
+           <div class="card" style="height: 270px">
              <div class="card-body">
                 <i class="fas fa-5x fa-users text-success"></i>
               </div>
@@ -193,10 +204,10 @@
               </div>
             </div>
           </div>
-           <div class="column col-sm-12 col-md-4">
-           <div class="card">
+           <div class="column col-sm-12 col-md-12 col-lg-4">
+           <div class="card" style="height: 270px">
              <div class="card-body">
-                <i class="fas fa-5x fa-phone text-success"></i>
+                <i class="fas fa-5x fa-credit-card text-success"></i>
               </div>
               <div class="card-header">
                 <div class="card-title h5">Поволни цени</div>
@@ -204,10 +215,10 @@
               </div>
             </div>
           </div>
-           <div class="column col-sm-12 col-md-4">
-           <div class="card">
+           <div class="column col-sm-12 col-md-12 col-lg-4">
+           <div class="card" style="height: 270px">
               <div class="card-body">
-                <i class="fas fa-5x fa-plane text-success"></i>
+                 <i class="fas fa-5x fa-phone text-success"></i>
               </div>
               <div class="card-header">
                 <div class="card-title h5">Професионална поддршка</div>
@@ -219,10 +230,36 @@
       </div>
     </section>
 
+    <!-- Секција: Следење  -->
+    <section class="section section-follow bg-success text-center">
+      <div class="container">
+        <div class="columns">
+          <div class="column col-sm-12">
+            <h2>Следете го Фиктравел</h2>
+            <p>Следете не на социјалните мрежи за посебни понуди</p>
+            <p>
+              <a href="https://www.facebook.com/" class="text-secondary" target="_blank">
+                <i class="fab fa-facebook fa-4x"></i>
+              </a>
+              <a href="https://twitter.com/" class="text-secondary" target="_blank">
+                <i class="fab fa-twitter fa-4x "></i>
+              </a>
+              <a href="https://www.linkedin.com/" class="text-secondary" target="_blank">
+                <i class="fab fa-linkedin fa-4x"></i>
+              </a>
+              <a href="https://www.pinterest.com/" class="text-secondary" target="_blank">
+                <i class="fab fa-pinterest fa-4x"></i>
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Секција: Дестинации -->
     <section id="destinacii" class="section section-destinations text-center">
       <div class="container">
-         <h4 class="text-success">Дестинации</h4>
+         <h2 class="text-success">Дестинации</h2>
         <!-- РЕД 1 -->
         <div class="columns">
           <div class="column col-sm-12 col-md-4">
@@ -236,13 +273,13 @@
               <div class="card-body">
                 <h5>
                   Цени од
-                  <span class="teal-text" style="font-size: 45px"
+                  <span class="text-success" style="font-size: 45px"
                     >129&euro;</span
                   >
                 </h5>
               </div>
-              <div class="card-footer">
-                <button class="btn btn-lg btn-success">Резервирај <i class="far fa-lg fa-calendar-alt"></i></button>
+            <div class="card-footer">
+                <button class="btn btn-lg btn-success" onclick="modalOpen()">Резервирај <i class="far fa-lg fa-calendar-alt"></i></button>
               </div>
             </div>
           </div>
@@ -257,13 +294,13 @@
               <div class="card-body">
                 <h5>
                   Цени од
-                  <span class="teal-text" style="font-size: 45px"
+                  <span class="text-success" style="font-size: 45px"
                     >109&euro;</span
                   >
                 </h5>
               </div>
-              <div class="card-footer">
-                <button class="btn btn-lg btn-success">Резервирај <i class="far fa-lg fa-calendar-alt"></i></button>
+             <div class="card-footer">
+                <button class="btn btn-lg btn-success" onclick="modalOpen()">Резервирај <i class="far fa-lg fa-calendar-alt"></i></button>
               </div>
             </div>
           </div>
@@ -278,13 +315,13 @@
               <div class="card-body">
                 <h5>
                   Цени од
-                  <span class="teal-text" style="font-size: 45px"
+                  <span class="text-success" style="font-size: 45px"
                     >999&euro;</span
                   >
                 </h5>
               </div>
               <div class="card-footer">
-                <button class="btn btn-lg btn-success">Резервирај <i class="far fa-lg fa-calendar-alt"></i></button>
+                <button class="btn btn-lg btn-success" onclick="modalOpen()">Резервирај <i class="far fa-lg fa-calendar-alt"></i></button>
               </div>
             </div>
           </div>
@@ -302,13 +339,13 @@
               <div class="card-body">
                 <h5>
                   Цени од
-                  <span class="teal-text" style="font-size: 45px"
+                  <span class="text-success" style="font-size: 45px"
                     >199&euro;</span
                   >
                 </h5>
               </div>
               <div class="card-footer">
-                <button class="btn btn-lg btn-success">Резервирај <i class="far fa-lg fa-calendar-alt"></i></button>
+                <button class="btn btn-lg btn-success" onclick="modalOpen()">Резервирај <i class="far fa-lg fa-calendar-alt"></i></button>
               </div>
             </div>
           </div>
@@ -323,13 +360,13 @@
               <div class="card-body">
                 <h5>
                   Цени од
-                  <span class="teal-text" style="font-size: 45px"
+                  <span class="text-success" style="font-size: 45px"
                     >156&euro;</span
                   >
                 </h5>
               </div>
-              <div class="card-footer">
-                <button class="btn btn-lg btn-success">Резервирај <i class="far fa-lg fa-calendar-alt"></i></button>
+               <div class="card-footer">
+                <button class="btn btn-lg btn-success" onclick="modalOpen()">Резервирај <i class="far fa-lg fa-calendar-alt"></i></button>
               </div>
             </div>
           </div>
@@ -344,13 +381,13 @@
               <div class="card-body">
                 <h5>
                   Цени од
-                  <span class="teal-text" style="font-size: 45px"
+                  <span class="text-success" style="font-size: 45px"
                     >156&euro;</span
                   >
                 </h5>
               </div>
-              <div class="card-footer">
-                <button class="btn btn-lg btn-success">Резервирај <i class="far fa-lg fa-calendar-alt"></i></button>
+             <div class="card-footer">
+                <button class="btn btn-lg btn-success" onclick="modalOpen()">Резервирај <i class="far fa-lg fa-calendar-alt"></i></button>
               </div>
             </div>
           </div>
@@ -368,13 +405,13 @@
               <div class="card-body">
                 <h5>
                   Цени од
-                  <span class="teal-text" style="font-size: 45px"
+                  <span class="text-success" style="font-size: 45px"
                     >134&euro;</span
                   >
                 </h5>
               </div>
               <div class="card-footer">
-                <button class="btn btn-lg btn-success">Резервирај <i class="far fa-lg fa-calendar-alt"></i></button>
+                <button class="btn btn-lg btn-success" onclick="modalOpen()">Резервирај <i class="far fa-lg fa-calendar-alt"></i></button>
               </div>
             </div>
           </div>
@@ -389,13 +426,13 @@
               <div class="card-body">
                 <h5>
                   Цени од
-                  <span class="teal-text" style="font-size: 45px"
+                  <span class="text-success" style="font-size: 45px"
                     >79&euro;</span
                   >
                 </h5>
               </div>
-              <div class="card-footer">
-                <button class="btn btn-lg btn-success">Резервирај <i class="far fa-lg fa-calendar-alt"></i></button>
+             <div class="card-footer">
+                <button class="btn btn-lg btn-success" onclick="modalOpen()">Резервирај <i class="far fa-lg fa-calendar-alt"></i></button>
               </div>
             </div>
           </div>
@@ -410,105 +447,266 @@
               <div class="card-body">
                 <h5>
                   Цени од
-                  <span class="teal-text" style="font-size: 45px"
+                  <span class="text-success" style="font-size: 45px"
                     >89&euro;</span
                   >
                 </h5>
               </div>
-              <div class="card-footer">
-                <button class="btn btn-lg btn-success">Резервирај <i class="far fa-lg fa-calendar-alt"></i></button>
+               <div class="card-footer">
+                <button class="btn btn-lg btn-success" onclick="modalOpen()">Резервирај <i class="far fa-lg fa-calendar-alt"></i></button>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-
-    <!-- Секција: Следење  -->
-    <section class="section section-follow bg-success text-center">
-      <div class="container">
+        <!-- РЕД 4 -->
         <div class="columns">
-          <div class="column col-sm-12">
-            <h4>Следете го Фиктравел</h4>
-            <p>Следете не на социјалните мрежи за посебни понуди</p>
-            <p>
-              <a href="#" class="white-text">
-                <i class="fab fa-facebook fa-4x text-secondary"></i>
-              </a>
-              <a href="#" class="white-text">
-                <i class="fab fa-twitter fa-4x text-secondary"></i>
-              </a>
-              <a href="#" class="white-text">
-                <i class="fab fa-linkedin fa-4x text-secondary"></i>
-              </a>
-              <a href="#" class="white-text">
-                <i class="fab fa-google-plus fa-4x text-secondary"></i>
-              </a>
-              <a href="#" class="white-text">
-                <i class="fab fa-pinterest fa-4x text-secondary"></i>
-              </a>
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Секција: Контакт -->
-    <section id="kontakt" class="section section-contact">
-      <div class="container">
-        <div class="columns">
-
-          <div class="column col-sm-12 col-md-6">
-            <div class="card bg-success text-center">
-               <i class="far fa-3x fa-envelope"></i> 
-  
+          <div class="column col-sm-12 col-md-4">
+            <div class="card">
+              <div class="card-image">
+                <img src="img/belgrad.jpg" class="img-responsive">
+              </div>
               <div class="card-header">
-                <div class="card-title h5">Контакт</div>
+                <div class="card-title h5">Белград, Србија</div>
               </div>
               <div class="card-body">
-              Пополнете ги полињата за да ни испратите мејл, а ние во најбрзо време ќе ви одговориме, исто така може да ни испратите порака на социјалните мрежи, или да ни се јавите на телефонскиот број 070-001-002
+                <h5>
+                  Цени од
+                  <span class="text-success" style="font-size: 45px"
+                    >89&euro;</span
+                  >
+                </h5>
+              </div>
+               <div class="card-footer">
+                <button class="btn btn-lg btn-success" onclick="modalOpen()">Резервирај <i class="far fa-lg fa-calendar-alt"></i></button>
               </div>
             </div>
-
-            <table class="table">
-              <thead>
-                <tr>
-                  <th>Локација</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Агенција Фиктравел</td>
-                </tr>
-                <tr>
-                  <td>Битола, Македонија</td>
-                </tr>
-              </tbody>
-            </table>
           </div>
-
-          <div class="column col-sm-12 col-md-6">
-
-            <div class="card bg-gray contact-section">
-              <h5 class="text-center">Ве замолуваме да ги пополните полињата</h5>
-              <div class="form-group">
-                <input class="form-input" type="text" placeholder="Име">
-                <label class="form-label" ></label>
-                <input class="form-input" type="text" placeholder="Мејл">
-                <label class="form-label" ></label>
-                <input class="form-input" type="text" placeholder="Телефон">
-                <label class="form-label" ></label>
-                <textarea class="form-input" placeholder="Внесете порака" rows="3"></textarea>
-                 <label class="form-label" ></label>
-                <input type="submit" value="Испрати" class="btn btn-success" />
-                 <label class="form-label" ></label>
+          <div class="column col-sm-12 col-md-4">
+            <div class="card">
+              <div class="card-image">
+                <img src="img/kapadokija.jpg" class="img-responsive">
               </div>
-
+              <div class="card-header">
+                <div class="card-title h5">Кападокија, Централна Анадолија</div>
+              </div>
+              <div class="card-body">
+                <h5>
+                  Цени од
+                  <span class="text-success" style="font-size: 45px"
+                    >499&euro;</span
+                  >
+                </h5>
+              </div>
+               <div class="card-footer">
+                <button class="btn btn-lg btn-success" onclick="modalOpen()">Резервирај <i class="far fa-lg fa-calendar-alt"></i></button>
+              </div>
             </div>
-
+          </div>
+          <div class="column col-sm-12 col-md-4">
+            <div class="card">
+              <div class="card-image">
+                <img src="img/praga.jpg" class="img-responsive">
+              </div>
+              <div class="card-header">
+                <div class="card-title h5">Прага, Чешка</div>
+              </div>
+              <div class="card-body">
+                <h5>
+                  Цени од
+                  <span class="text-success" style="font-size: 45px"
+                    >299&euro;</span
+                  >
+                </h5>
+              </div>
+              <div class="card-footer">
+                <button class="btn btn-lg btn-success" onclick="modalOpen()">Резервирај <i class="far fa-lg fa-calendar-alt"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- РЕД 5 -->
+        <div class="columns">
+          <div class="column col-sm-12 col-md-4">
+            <div class="card">
+              <div class="card-image">
+                <img src="img/bratislava.jpg" class="img-responsive">
+              </div>
+              <div class="card-header">
+                <div class="card-title h5">Братислава, Словачка</div>
+              </div>
+              <div class="card-body">
+                <h5>
+                  Цени од
+                  <span class="text-success" style="font-size: 45px"
+                    >169&euro;</span
+                  >
+                </h5>
+              </div>
+               <div class="card-footer">
+                <button class="btn btn-lg btn-success" onclick="modalOpen()">Резервирај <i class="far fa-lg fa-calendar-alt"></i></button>
+              </div>
+            </div>
+          </div>
+          <div class="column col-sm-12 col-md-4">
+            <div class="card">
+              <div class="card-image">
+                <img src="img/bansko.jpg" class="img-responsive">
+              </div>
+              <div class="card-header">
+                <div class="card-title h5">Банско, Бугарија</div>
+              </div>
+              <div class="card-body">
+                <h5>
+                  Цени од
+                  <span class="text-success" style="font-size: 45px"
+                    >100&euro;</span
+                  >
+                </h5>
+              </div>
+               <div class="card-footer">
+                <button class="btn btn-lg btn-success" onclick="modalOpen()">Резервирај <i class="far fa-lg fa-calendar-alt"></i></button>
+              </div>
+            </div>
+          </div>
+          <div class="column col-sm-12 col-md-4">
+            <div class="card">
+              <div class="card-image">
+                <img src="img/borovec.jpg" class="img-responsive">
+              </div>
+              <div class="card-header">
+                <div class="card-title h5">Боровец, Буграија</div>
+              </div>
+              <div class="card-body">
+                <h5>
+                  Цени од
+                  <span class="text-success" style="font-size: 45px"
+                    >299&euro;</span
+                  >
+                </h5>
+              </div>
+              <div class="card-footer">
+                <button class="btn btn-lg btn-success" onclick="modalOpen()">Резервирај <i class="far fa-lg fa-calendar-alt"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- РЕД 6 -->
+        <div class="columns">
+          <div class="column col-sm-12 col-md-4">
+            <div class="card">
+              <div class="card-image">
+                <img src="img/hurgada.jpg" class="img-responsive">
+              </div>
+              <div class="card-header">
+                <div class="card-title h5">Хургада, Египет</div>
+              </div>
+              <div class="card-body">
+                <h5>
+                  Цени од
+                  <span class="text-success" style="font-size: 45px"
+                    >399&euro;</span
+                  >
+                </h5>
+              </div>
+              <div class="card-footer">
+                <button class="btn btn-lg btn-success" onclick="modalOpen()">Резервирај <i class="far fa-lg fa-calendar-alt"></i></button>
+              </div>
+            </div>
+          </div>
+          <div class="column col-sm-12 col-md-4">
+            <div class="card">
+              <div class="card-image">
+                <img src="img/sarm el seik.jpg" class="img-responsive">
+              </div>
+              <div class="card-header">
+                <div class="card-title h5">Шарм ел шеик, Египет</div>
+              </div>
+              <div class="card-body">
+                <h5>
+                  Цени од
+                  <span class="text-success" style="font-size: 45px"
+                    >465&euro;</span
+                  >
+                </h5>
+              </div>
+              <div class="card-footer">
+                <button class="btn btn-lg btn-success" onclick="modalOpen()">Резервирај <i class="far fa-lg fa-calendar-alt"></i></button>
+              </div>
+            </div>
+          </div>
+          <div class="column col-sm-12 col-md-4">
+            <div class="card">
+              <div class="card-image">
+                <img src="img/maldivi.jpg" class="img-responsive">
+              </div>
+              <div class="card-header">
+                <div class="card-title h5">Малдиви</div>
+              </div>
+              <div class="card-body">
+                <h5>
+                  Цени од
+                  <span class="text-success" style="font-size: 45px"
+                    >1510&euro;</span
+                  >
+                </h5>
+              </div>
+              <div class="card-footer">
+                <button class="btn btn-lg btn-success" onclick="modalOpen()">Резервирај <i class="far fa-lg fa-calendar-alt"></i></button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+    </section>
+
+    <!-- Parallax -->
+    <div class="parallax">
+      <div class="parallax-top-left" tabindex="1"></div>
+      <div class="parallax-top-right" tabindex="2"></div>
+      <div class="parallax-bottom-left" tabindex="3"></div>
+      <div class="parallax-bottom-right" tabindex="4"></div>
+      <div class="parallax-content">
+        <div class="parallax-back">
+          <img src="img/parallax2.jpeg" class="img-responsive rounded" style="width: 1900px; height: 500px;">
+        </div>
+      </div>
+    </div>
+
+    <!-- Секција: Искуства -->
+    <section id="iskustva" class="section-iskustva">
+      <div class="container">
+        <div class="columns">
+          <div class="column">
+            <h2 class="text-center"><span class="text-success">Искуства </span>од клиенти</h2>
+            <table class="table">
+            <tbody>
+              <tr>
+                <td><figure class="avatar avatar-xl">
+                <img src="img/person1.jpg" alt="Avatar1">
+              </figure></td>
+                <td> " Барселона е навистина еден од најдобрите градови во светот. кога отидовме минатото лето беше топло и прекрасно со одлична плажа и многу активен ноќен живот. "<em>- Димитар</em></td>
+                <td>Барселона, Шпанија</td>
+              </tr>
+              <tr>
+                <td><figure class="avatar avatar-xl">
+                <img src="img/person2.jpg" alt="Avatar1">
+              </figure></td>
+                <td>  " Истанбул е прекрасен град. Град полн со убавина, историја, спектакуларна архитектура, неверојатни ресторани, погледи за кои се умира, прекрасни мали семејни хотели, исклучително љубезни и искрени луѓе, ноќни клубови исполнети со забава, егзотични звуци, егзотични мириси и многу други чудесни нешта кои ќе останат за успомен. "<em>- Зоран </em></td>
+                <td>Истанбул, Турција</td>
+              </tr>
+              <tr>
+                <td><figure class="avatar avatar-xl">
+                <img src="img/person3.jpg" alt="Avatar1">
+              </figure></td>
+                <td>  " Париз е магичен! Од неговите убави и извонредни пејзажи до неговите инспиративни кафулиња, Париз има уникатна комбинација на традиционална архитектура, богата историја, пријатни паркови и плоштади, оригинална кујна и посебен дух на животот. "<em>- Соња </em></td>
+                <td>Париз, Франција</td>
+              </tr>
+            </tbody>
+          </table>
+          </div>
+        </div>
+      </div>
+
     </section>
 
     <!-- Footer -->
@@ -516,5 +714,77 @@
       <h4>Фиктравел &copy; 2021</h4>
     </footer>
 
+    <!-- Modal резервирај -->
+    <div class="modal" id="modalrezerviraj">
+      <a href="#close" class="modal-overlay" aria-label="Close" onclick="modalClose()"></a>
+      <div class="modal-container active">
+        <div class="modal-header">
+          <a href="#close" class="btn btn-clear float-right" aria-label="Close" onclick="modalClose()"></a>
+          <div class="modal-title h5">Резервирај</div>
+        </div>
+        <div class="modal-body">
+          <div class="content">
+            <div class="form-group">
+              <div class="columns">
+                <div class="column col-sm-6">
+                    <label class="form-label" for="Ime">Име</label>
+                  <input class="form-input" type="text" id="Ime" placeholder="Име">
+                    </div>
+                    <div class="column col-sm-6">
+                        <label class="form-label" for="Prezime">Презиме</label>
+                    <input class="form-input" type="text" id="Prezime" placeholder="Презиме">
+                      </div>
+               </div>
+              <div class="columns">
+                <div class="column col-sm-6">
+                    <label class="form-label" for="brosobi">Вкупен број на особи</label>
+                  <input class="form-input" type="number" id="brosobi" placeholder="Вкупен број на особи">
+                    </div>
+                    <div class="column col-sm-6">
+                        <label class="form-label" for="telbroj">Телефонски број</label>
+                    <input class="form-input" type="text" id="telbroj" placeholder="000/000/000">
+                      </div>
+               </div>
+            <label class="form-label" for="email">Емејл</label>
+            <input class="form-input" type="email" id="email" placeholder="Емејл">
+            <div class="columns">
+                <div class="column col-sm-6">
+                    <label class="form-label" for="pocetendatum">Почетен датум</label>
+                  <input class="form-input" type="text" id="pocetendatum" placeholder="Почетен датум">
+                    </div>
+                    <div class="column col-sm-6">
+                        <label class="form-label" for="kraendatum">Краен датум</label>
+                    <input class="form-input" type="text" id="kraendatum" placeholder="Краен датум">
+                      </div>
+               </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-error float-left" onclick="modalClose()">Откажи</button>
+          <button class="btn btn-success" onclick="makeAlert(); modalClose()">Резервирај</button>
+        </div>
+      </div>
+    </div>
+ 
   </body>
+
+  <script>
+    // Modal функции
+    function modalOpen() {
+      const modal = document.getElementById('modalrezerviraj');
+      modal.classList.add('active');
+    }
+    function modalClose() {
+      const modal = document.getElementById('modalrezerviraj');
+      modal.classList.remove('active');
+    }
+
+    // Alert
+    function makeAlert() {
+      alert("Успешно! Очекувајте да ве контактираме");
+    }
+
+  </script>
 </html>
