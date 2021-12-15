@@ -74,8 +74,9 @@ footer {
     margin-top: 100px;
   }
 
-  .section-zanas {
+  .section-about {
     margin: 30px;
     font-size: medium;
+    background: #3a3a3c;
   }
 }
